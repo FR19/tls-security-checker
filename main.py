@@ -3,12 +3,13 @@ import logging
 from modules.common_prime import CheckCommonPrime
 from modules.tls_versions import CheckTLSVersionsAndCiphers
 from modules.weak_macs import CheckWeakMACs
+from modules.static_key import CheckStaticKey
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 logger = logging.getLogger(__name__)
 
-CHECKERS = [CheckCommonPrime, CheckWeakMACs]
+CHECKERS = [CheckCommonPrime, CheckWeakMACs, CheckStaticKey]
 
 def main():
     parser = argparse.ArgumentParser(description="TLS Security Checker")
