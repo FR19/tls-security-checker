@@ -28,7 +28,7 @@ The following tools must be installed on your system:
 3. **testssl.sh**:
 
    - Used for comprehensive TLS testing.
-   - Download the latest version from the [official GitHub repository](https://github.com/drwetter/testssl.sh).
+   - Download the latest version from the [official GitHub repository](https://github.com/testssl/testssl.sh).
 
 4. **Python 3**:
    - The tool requires Python 3.6 or later.
